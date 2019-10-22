@@ -1,0 +1,14 @@
+// ------------------------------------ Global elements ------------------------------------ 
+@import 'elements/_mixins';
+@import 'elements/_config';
+@import 'elements/_fonts';
+@import 'elements/_artifacts';
+@import 'elements/_animate';
+@import 'elements/_base';
+@import 'elements/_slide';
+@import 'elements/_svg';
+@import 'elements/_typography';
+
+// ------------------------------------ Regions (footer, header, menus, etc) ------------------------------------ 
+@import 'sections/_home';
+@import 'sections/_neurona-01';

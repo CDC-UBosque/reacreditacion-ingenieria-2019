@@ -1,0 +1,71 @@
+/* ---------------------------------- home -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.home{
+	//padding: 4rem 2rem;
+	position: relative;
+	height: calc(100vh - 0px);
+	align-self: start;
+	@include display-grid;
+	@include grid-parent-12-columns (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
+	
+	.anim{
+		position: relative;
+		height: calc(100vh - 0px);
+		z-index: 1;
+		@include grid-child-column (1, 13);
+		@include grid-child-row (1, 7); 
+	}
+	
+	.content{
+		position: relative;
+		z-index: 10;
+		@include grid-child-column (4, 10);
+		@include grid-child-row (3, 5); 
+		@include display-grid;
+		@include grid-parent-12-columns (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
+		
+		img{
+			//min-width: 450px;
+			margin-bottom: 1rem;
+			@include grid-child-column (1, 13);
+			@include grid-child-row (1, 2); 
+		}
+		
+		h1{
+			@include grid-child-column (1, 13);
+			@include grid-child-row (2, 3); 
+		}
+		
+		h4{
+			place-self: right;
+			text-align: right;
+			@include grid-child-column (7, 13);
+			@include grid-child-row (3, 4); 
+		}
+		
+		hr{
+			place-self: right;
+			text-align: right;
+			@include grid-child-column (7, 13);
+			@include grid-child-row (4, 5); 
+		}
+		
+		p{
+			place-self: right;
+			text-align: right;
+			@include grid-child-column (7, 13);
+			@include grid-child-row (5, 6); 
+		}
+		
+	}
+	
+	.mouse{
+		position: absolute;
+		bottom: 5%;
+		place-self: center;
+		//- @include grid-child-column (1, 13);
+		//- @include grid-child-row (6, 7); 
+	}
+	
+}

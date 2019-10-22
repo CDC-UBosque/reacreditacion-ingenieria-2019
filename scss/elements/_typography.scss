@@ -1,0 +1,110 @@
+h1{
+	word-break: break-word;
+	display: inline-block;
+	@include font_universal (
+		$font_family_line_height: 50px,
+		$font_family_weight: 300,
+		$font_family_size: 50px,
+		$font_family_color: $color_brand_white,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_black
+	);
+	@media (max-width: $breakpoint_2){
+		font-size: 33px;
+		line-height: 33px;
+	}
+}
+
+h2{
+	word-break: break-word;
+	display: block;
+	@include font_universal (
+		$font_family_line_height: 51px ,
+		$font_family_weight: 300 !important,
+		$font_family_size: 41px !important,
+		$font_family_color: $color_brand_white ,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_bold
+	);
+	
+	@media (max-width: $breakpoint_2){
+		font-size: 34px;
+		line-height: 35px;
+	}
+	
+}
+
+h3{
+	word-break: break-word;
+	display: block;
+	@include font_universal (
+		$font_family_line_height: 41px,
+		$font_family_weight: 300,
+		$font_family_size: 34px,
+		$font_family_color: $color_brand_white,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_bold
+	);
+}
+
+h4{
+	word-break: break-word;
+	display: block;
+	@include font_universal (
+		$font_family_line_height: 18px,
+		$font_family_weight: 300,
+		$font_family_size: 16px,
+		$font_family_color: $color_brand_white,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_ultralight
+	);
+	
+	b{
+		font-family: $font_acherus_bold;
+	}
+	
+}
+
+h5{
+	word-break: break-word;
+	display: block;
+	@include font_universal (
+		$font_family_line_height: 28px,
+		$font_family_weight: 300,
+		$font_family_size: 20px,
+		$font_family_color: $color_brand_white,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_ultralight
+	);
+}
+
+h6{
+	word-break: break-word;
+	display: block;
+	@include font_universal (
+		$font_family_line_height: 20px,
+		$font_family_weight: 300,
+		$font_family_size: 14px,
+		$font_family_color: $color_brand_white,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_ultralight
+	);
+}
+
+p{
+	word-break: break-word;
+	display: block;
+	@include font_universal (
+		$font_family_line_height: 17px,
+		$font_family_weight: 300,
+		$font_family_size: 13px,
+		$font_family_color: $color_brand_white,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_regular
+	);
+	
+	b{
+		font-family: $font_acherus_bold;
+	}
+	
+}
