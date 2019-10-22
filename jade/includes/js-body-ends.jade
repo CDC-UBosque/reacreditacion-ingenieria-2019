@@ -11,37 +11,16 @@ script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.
 script(src="js/anime.js")
 script(src="js/snap.svg-min.js")
 
-<script type="module">import anime from '../js/index.js';var pathEls = document.querySelectorAll('path');for (var i = 0; i < pathEls.length; i++) {var pathEl = pathEls[i];var offset = anime.setDashoffset(pathEl);pathEl.setAttribute('stroke-dashoffset', offset);anime({targets: pathEl,strokeDashoffset: [offset, 0],duration: anime.random(1000, 5000),delay: anime.random(0, 2000),loop: true,direction: 'alternate',easing: 'easeInOutSine',autoplay: true});}</script>	
-
-//- script.
-//- 	import anime from '../js/index.js';
-//- 	var pathEls = document.querySelectorAll('path');
-//- 	for (var i = 0; i < pathEls.length; i++) {
-//- 		var pathEl = pathEls[i];
-//- 		var offset = anime.setDashoffset(pathEl);
-//- 		pathEl.setAttribute('stroke-dashoffset', offset);
-//- 		anime({
-//- 			targets: pathEl,
-//- 			strokeDashoffset: [offset, 0],
-//- 			duration: anime.random(1000, 3000),
-//- 			delay: anime.random(0, 2000),
-//- 			loop: true,
-//- 			direction: 'alternate',
-//- 			easing: 'easeInOutSine',
-//- 			autoplay: true
-//- 		});
-//- 	}
+<script type="module">import anime from '../js/index.js';var pathEls = document.querySelectorAll('path');for (var i = 0; i < pathEls.length; i++) {var pathEl = pathEls[i];var offset = anime.setDashoffset(pathEl);pathEl.setAttribute('stroke-dashoffset', offset);anime({targets: pathEl,strokeDashoffset: [offset, 0],duration: anime.random(1000, 50000),delay: anime.random(0, 2000),loop: true,direction: 'alternate',easing: 'easeInOutSine',autoplay: true});}</script>	
   
 script(src="js/stats.min.js")
 
 
 //- Mouse wheel control
-//- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js")
 
 script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.0/js/swiper.min.js")
 
 //- scrollspy
-//- script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
 script.
 	var swiper = new Swiper(".swiper-container", {
 		pagination: ".swiper-pagination",

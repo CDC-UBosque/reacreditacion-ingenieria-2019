@@ -255,6 +255,7 @@ $font_family_group: $family) {
 // --------------------------------------------------- //
 @mixin max-width-neuronas{
 	max-width: 30rem;
+	height: calc(80vh - 0px);
 	margin: auto;
 }
 

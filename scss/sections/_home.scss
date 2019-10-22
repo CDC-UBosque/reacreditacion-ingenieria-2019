@@ -20,6 +20,7 @@
 	.content{
 		position: relative;
 		z-index: 10;
+		margin-top: 5rem;
 		@include grid-child-column (4, 10);
 		@include grid-child-row (3, 5); 
 		@include display-grid;

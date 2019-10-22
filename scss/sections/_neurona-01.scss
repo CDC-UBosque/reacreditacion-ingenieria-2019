@@ -11,7 +11,7 @@
 		justify-self: end;
 		transition-timing-function: ease-in-out;
 		transition: 0.2s;
-		transform: translatex(0rem);
+		transform: translatex(9rem);
 		cursor: pointer;
 		@include grid-child-column (1, 2);
 		@include grid-child-row (1, 2);
@@ -114,7 +114,7 @@
 		justify-self: start;
 		transition-timing-function: ease-in-out;
 		transition: 0.2s;
-		transform: translatex(0rem);
+		transform: translatex(-9rem);
 		cursor: pointer;
 		@include grid-child-column (2, 3);
 		@include grid-child-row (1, 2);

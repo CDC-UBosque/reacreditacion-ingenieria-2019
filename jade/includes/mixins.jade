@@ -103,8 +103,8 @@ mixin set(key)
 	
 
 // mixin neuronas left
-mixin swiper-info-left(numneurona)
-	div.swiper-slide(id=numneurona)
+mixin swiper-info-left(numneurona, classneurona)
+	div.swiper-slide(id=numneurona class=classneurona)
 		div.image-neurona
 			block
 			- blocks.contentsvg()
@@ -117,8 +117,8 @@ mixin swiper-info-left(numneurona)
 				
 				
 // mixin neuronas left
-mixin swiper-info-right(numneurona)
-	div.swiper-slide(id=numneurona)
+mixin swiper-info-right(numneurona, classneurona)
+	div.swiper-slide(id=numneurona class=classneurona)
 		
 		div.content-neurona
 			div.close-button: img(src='images/svg/close.svg')
