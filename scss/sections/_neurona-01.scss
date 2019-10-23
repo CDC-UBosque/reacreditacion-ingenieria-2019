@@ -5,6 +5,15 @@
 	@include display-grid;
 	@include grid-parent-2-columns (1fr, 1fr);
 	
+	@media (max-width: $breakpoint_3){
+		@include grid-parent-1-columns (1fr);
+		@include grid-parent-2-rows (1fr, 1fr);
+	}
+	
+	@media (max-width: $breakpoint_4){
+		@include grid-parent-1-rows (1fr);
+	}
+	
 	.image-neurona{
 		position: relative;
 		z-index: 100;
@@ -16,15 +25,35 @@
 		@include grid-child-column (1, 2);
 		@include grid-child-row (1, 2);
 		
+		@media (max-width: $breakpoint_3){
+			transform: translatex(0rem);
+			@include max-width-neuronas-mobile;
+		}
+		
+		@media (max-width: $breakpoint_4){
+			height: calc(70vh - 0px);
+			justify-self: center;
+		}
+		
 		&:hover{
 			transition-timing-function: ease-in-out;
 			transition: 0.2s;
 			transform: translatex(2rem);
+			
+			@media (max-width: $breakpoint_3){
+				transform: translatex(0rem);
+			}
+			
 		}
 		
 		.anim{
 			animation: float 8s ease-in-out infinite;
 			@include max-width-neuronas;
+			
+			@media (max-width: $breakpoint_3){
+				@include max-width-neuronas-mobile;
+			}
+		
 		}
 		
 		.number-neurona{
@@ -32,6 +61,12 @@
 			right:0;
 			top: 15%;
 			@include max-width-neuronas-number;
+			
+			@media (max-width: $breakpoint_3){
+				top: 4%;
+				@include max-width-neuronas-number-mobile;
+			}
+			
 		}
 		
 	}
@@ -40,6 +75,12 @@
 		transition-timing-function: ease-in-out;
 		transition: 0.2s;
 		transform: translatex(2rem);
+		
+		@media (max-width: $breakpoint_3){
+			transform: translatex(0rem);
+			//transform: translatey(7rem);
+		}
+			
 	}
 	
 	.content-neurona{
@@ -52,9 +93,26 @@
 	    padding: 2rem;
 		@include max-width-content-neuronas;
 		margin: 0 1rem 0 5rem;
-		// place-self: center;
 		@include grid-child-column (2, 3);
 		@include grid-child-row (1, 2);
+		
+		@media (max-width: $breakpoint_3){
+			padding: 1rem;
+			margin: 0 auto;
+			max-width: initial;
+			align-self: baseline;
+			@include grid-child-column (1, 2);
+			@include grid-child-row (2, 3);
+		}
+		
+		@media (max-width: $breakpoint_4){
+			z-index: 100000;
+			align-self: center;
+			justify-self: center;
+			margin: 0 auto;
+			background: transparentize($color_black, 0.1);
+			@include grid-child-row (1, 2);
+		}
 		
 		&:before{
 			content: '';
@@ -65,6 +123,13 @@
 			height: 3rem;
 			left: -1.9rem;
 			top: 15%;
+			
+			@media (max-width: $breakpoint_3){
+				left: 45%;
+			    top: -2.4rem;
+			    transform: rotate(90deg);
+			}
+			
 		}
 		
 		.close-button{
@@ -87,10 +152,6 @@
 			
 		}
 		
-		h1{
-			
-		}
-		
 		a{
 			display: block;
 		}
@@ -108,6 +169,10 @@
 	@include display-grid;
 	@include grid-parent-2-columns (1fr, 1fr);
 	
+	@media (max-width: $breakpoint_4){
+		@include grid-parent-1-columns (1fr);
+	}
+	
 	.image-neurona{
 		position: relative;
 		z-index: 100;
@@ -119,15 +184,36 @@
 		@include grid-child-column (2, 3);
 		@include grid-child-row (1, 2);
 		
+		@media (max-width: $breakpoint_3){
+			transform: translatex(0rem);
+			@include max-width-neuronas-mobile;
+		}
+		
+		@media (max-width: $breakpoint_4){
+			height: calc(70vh - 0px);
+			justify-self: center;
+			@include grid-child-column (1, 2);
+		}
+		
 		&:hover{
 			transition-timing-function: ease-in-out;
 			transition: 0.2s;
 			transform: translatex(-2rem);
+			
+			@media (max-width: $breakpoint_3){
+				transform: translatex(0rem);
+			}
+			
 		}
 		
 		.anim{
 			animation: float 8s ease-in-out infinite;
 			@include max-width-neuronas;
+			
+			@media (max-width: $breakpoint_3){
+				@include max-width-neuronas-mobile;
+			}
+			
 		}
 		
 		.number-neurona{
@@ -135,6 +221,12 @@
 			left:0;
 			top: 15%;
 			@include max-width-neuronas-number;
+			
+			@media (max-width: $breakpoint_3){
+				top: 4%;
+				@include max-width-neuronas-number-mobile;
+			}
+			
 		}
 		
 	}
@@ -143,6 +235,12 @@
 		transition-timing-function: ease-in-out;
 		transition: 0.2s;
 		transform: translatex(-2rem);
+		
+		@media (max-width: $breakpoint_3){
+			transform: translatex(0rem);
+			//transform: translatey(7rem);
+		}
+		
 	}
 	
 	.content-neurona{
@@ -159,6 +257,24 @@
 		@include grid-child-column (1, 2);
 		@include grid-child-row (1, 2);
 		
+		@media (max-width: $breakpoint_3){
+			padding: 1rem;
+			margin: 0 auto;
+			max-width: initial;
+			align-self: baseline;
+			@include grid-child-column (1, 2);
+			@include grid-child-row (2, 3);
+		}
+		
+		@media (max-width: $breakpoint_4){
+			z-index: 100000;
+			align-self: center;
+			justify-self: center;
+			margin: 0 auto;
+			background: transparentize($color_black, 0.1);
+			@include grid-child-row (1, 2);
+		}
+		
 		&:before{
 			content: '';
 			position: absolute;
@@ -168,6 +284,13 @@
 			height: 3.4rem;
 			right: -2.8rem;
 			top: 15%;
+			
+			@media (max-width: $breakpoint_3){
+				left: 45%;
+				top: -3.1rem;
+				transform: rotate(-90deg);
+			}
+			
 		}
 		
 		.close-button{
@@ -177,6 +300,10 @@
 			cursor: pointer;
 			transition-timing-function: ease-in-out;
 			transition: 0.2s;
+			
+			@media (max-width: $breakpoint_4){
+				margin: -.2rem -.2rem 1rem;
+			}
 			
 			&:hover{
 				

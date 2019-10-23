@@ -23,7 +23,7 @@ html{
 			@include prefix(transition, all 0.3s ease, webkit moz o ms);
 			
 			&:hover{
-				@include prefix(box-shadow, 0px 10px 24px rgba(0,0,0,0.3), webkit moz);
+				//@include prefix(box-shadow, 0px 10px 24px rgba(0,0,0,0.3), webkit moz);
 			}
 			
 		}
@@ -33,6 +33,13 @@ html{
 			padding: .3rem 0;
 			color: $color_brand_white;
 			@include prefix(transition, all 0.3s ease, webkit moz o ms);
+			
+			@media (max-width: $breakpoint_3){
+				padding: .1rem 0;
+				font-size: 14px;
+				line-height: 16px;
+			}
+			
 		}
 		
 		::after, ::before{
@@ -42,6 +49,11 @@ html{
 		hr{
 			width: 100%;
 			border-top: 1px solid $color_brand_white;
+			
+			@media (max-width: $breakpoint_4){
+				margin: .3rem 0;
+			}
+	
 		}
 				
 	}

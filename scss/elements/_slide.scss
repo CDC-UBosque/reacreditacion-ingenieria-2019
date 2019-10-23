@@ -2,9 +2,10 @@ html, body {
     position: relative;
     height: 100%;
 }
+
 body {
 	background: $color_black;
-	color:#fff;
+	color:$color_brand_white;
 	margin: 0;
 	padding: 0;
     
@@ -34,8 +35,31 @@ body {
 		align-items: center;
     }
     
-	.swiper-pagination-bullet-active{
-		background-color:#fff;
-	}
+    .swiper-pagination{
+	    
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+
+	    
+	    .swiper-pagination-bullet{
+			width: .5rem;
+			height: .5rem;
+			margin: 0 .2rem;
+			margin: 0 .2rem;
+			border-radius: 20px;
+			display: inline-block;
+			cursor: pointer;
+		    border: 1px solid $color_brand_white;
+	    }
+	    
+	    .swiper-pagination-bullet-active{
+			background-color:$color_brand_white;
+		}
+	    
+    }
     
 }

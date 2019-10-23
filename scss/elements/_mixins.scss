@@ -259,8 +259,20 @@ $font_family_group: $family) {
 	margin: auto;
 }
 
+@mixin max-width-neuronas-mobile{
+	max-width: 15rem;
+	//height: calc(80vh - 0px);
+	height: initial;
+	margin: auto;
+}
+
 @mixin max-width-neuronas-number{
 	max-width: 7rem;
+	margin: auto;
+}
+
+@mixin max-width-neuronas-number-mobile{
+	max-width: 5rem;
 	margin: auto;
 }
 
