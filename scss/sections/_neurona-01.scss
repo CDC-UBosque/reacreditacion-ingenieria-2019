@@ -18,15 +18,15 @@
 		position: relative;
 		z-index: 100;
 		justify-self: end;
-		transition-timing-function: ease-in-out;
-		transition: 0.2s;
+		@include prefix(transition-timing-function, ease-in-out, webkit moz o);
+		@include prefix(transition, 0.2s, webkit moz o);
 		transform: translatex(9rem);
 		cursor: pointer;
 		@include grid-child-column (1, 2);
 		@include grid-child-row (1, 2);
 		
 		@media (max-width: $breakpoint_3){
-			transform: translatex(0rem);
+			@include prefix(transform, translatex(0rem), webkit moz o);
 			@include max-width-neuronas-mobile;
 		}
 		
@@ -36,18 +36,18 @@
 		}
 		
 		&:hover{
-			transition-timing-function: ease-in-out;
-			transition: 0.2s;
-			transform: translatex(2rem);
+			@include prefix(transition-timing-function, ease-in-out, webkit moz o);
+			@include prefix(transition, 0.2s, webkit moz o);
+			@include prefix(transform, translatex(2rem), webkit moz o);
 			
 			@media (max-width: $breakpoint_3){
-				transform: translatex(0rem);
+				@include prefix(transform, translatex(0rem), webkit moz o);
 			}
 			
 		}
 		
 		.anim{
-			animation: float 8s ease-in-out infinite;
+			@include prefix(animation, float 8s ease-in-out infinite, webkit moz o);
 			@include max-width-neuronas;
 			
 			@media (max-width: $breakpoint_3){
@@ -72,13 +72,12 @@
 	}
 	
 	.image-neurona.move{
-		transition-timing-function: ease-in-out;
-		transition: 0.2s;
-		transform: translatex(2rem);
+		@include prefix(transition-timing-function, ease-in-out, webkit moz o);
+		@include prefix(transition, 0.2s, webkit moz o);
+		@include prefix(transform, translatex(2rem), webkit moz o);
 		
 		@media (max-width: $breakpoint_3){
-			transform: translatex(0rem);
-			//transform: translatey(7rem);
+			@include prefix(transform, translatex(0rem), webkit moz o);
 		}
 			
 	}
@@ -127,7 +126,7 @@
 			@media (max-width: $breakpoint_3){
 				left: 45%;
 			    top: -2.4rem;
-			    transform: rotate(90deg);
+			    @include prefix(transform, rotate(90deg), webkit moz o);
 			}
 			
 		}
@@ -137,15 +136,15 @@
 			display: block;
 			margin: -1rem -1rem 1rem;
 			cursor: pointer;
-			transition-timing-function: ease-in-out;
-			transition: 0.2s;
+			@include prefix(transition-timing-function, ease-in-out, webkit moz o);
+			@include prefix(transition, 0.2s, webkit moz o);
 			
 			&:hover{
 				
 				img{
-					transition-timing-function: ease-in-out;
-					transition: 0.2s;
-					transform: rotate(90deg);
+					@include prefix(transition-timing-function, ease-in-out, webkit moz o);
+					@include prefix(transition, 0.2s, webkit moz o);
+					@include prefix(transform, rotate(90deg), webkit moz o);
 				}
 				
 			}
@@ -177,15 +176,15 @@
 		position: relative;
 		z-index: 100;
 		justify-self: start;
-		transition-timing-function: ease-in-out;
-		transition: 0.2s;
-		transform: translatex(-9rem);
+		@include prefix(transition-timing-function, ease-in-out, webkit moz o);
+		@include prefix(transition, 0.2s, webkit moz o);
+		@include prefix(transform, translatex(-9rem), webkit moz o);
 		cursor: pointer;
 		@include grid-child-column (2, 3);
 		@include grid-child-row (1, 2);
 		
 		@media (max-width: $breakpoint_3){
-			transform: translatex(0rem);
+			@include prefix(transform, translatex(0rem), webkit moz o);
 			@include max-width-neuronas-mobile;
 		}
 		
@@ -196,18 +195,18 @@
 		}
 		
 		&:hover{
-			transition-timing-function: ease-in-out;
-			transition: 0.2s;
-			transform: translatex(-2rem);
+			@include prefix(transition-timing-function, ease-in-out, webkit moz o);
+			@include prefix(transition, 0.2s, webkit moz o);
+			@include prefix(transform, translatex(-2rem), webkit moz o);
 			
 			@media (max-width: $breakpoint_3){
-				transform: translatex(0rem);
+				@include prefix(transform, translatex(0rem), webkit moz o);
 			}
 			
 		}
 		
 		.anim{
-			animation: float 8s ease-in-out infinite;
+			@include prefix(animation, float 8s ease-in-out infinite, webkit moz o);
 			@include max-width-neuronas;
 			
 			@media (max-width: $breakpoint_3){
@@ -232,12 +231,12 @@
 	}
 	
 	.image-neurona.move{
-		transition-timing-function: ease-in-out;
-		transition: 0.2s;
-		transform: translatex(-2rem);
+		@include prefix(transition-timing-function, ease-in-out, webkit moz o);
+		@include prefix(transition, 0.2s, webkit moz o);
+		@include prefix(transform, translatex(-2rem), webkit moz o);
 		
 		@media (max-width: $breakpoint_3){
-			transform: translatex(0rem);
+			@include prefix(transform, translatex(0rem), webkit moz o);
 			//transform: translatey(7rem);
 		}
 		
@@ -288,7 +287,7 @@
 			@media (max-width: $breakpoint_3){
 				left: 45%;
 				top: -3.1rem;
-				transform: rotate(-90deg);
+				@include prefix(transform, rotate(-90deg), webkit moz o);
 			}
 			
 		}
@@ -298,8 +297,8 @@
 			display: block;
 			margin: -1rem -1rem 1rem;
 			cursor: pointer;
-			transition-timing-function: ease-in-out;
-			transition: 0.2s;
+			@include prefix(transition-timing-function, ease-in-out, webkit moz o);
+			@include prefix(transition, 0.2s, webkit moz o);
 			
 			@media (max-width: $breakpoint_4){
 				margin: -.2rem -.2rem 1rem;
@@ -308,9 +307,9 @@
 			&:hover{
 				
 				img{
-					transition-timing-function: ease-in-out;
-					transition: 0.2s;
-					transform: rotate(90deg);
+					@include prefix(transition-timing-function, ease-in-out, webkit moz o);
+					@include prefix(transition, 0.2s, webkit moz o);
+					@include prefix(transform, rotate(90deg), webkit moz o);
 				}
 				
 			}
@@ -344,5 +343,41 @@
 	}
 	100% {
 		transform: translatey(0px);
+	}
+}
+
+@-webkit-keyframes float {
+	0% {
+		-webkit-transform: translatey(0px);
+	}
+	50% {
+		-webkit-transform: translatey(-30px);
+	}
+	100% {
+		-webkit-transform: translatey(0px);
+	}
+}
+
+@-moz-keyframes float {
+	0% {
+		-moz-transform: translatey(0px);
+	}
+	50% {
+		-moz-transform: translatey(-30px);
+	}
+	100% {
+		-moz-transform: translatey(0px);
+	}
+}
+
+@-o-keyframes float {
+	0% {
+		-o-transform: translatey(0px);
+	}
+	50% {
+		-o-transform: translatey(-30px);
+	}
+	100% {
+		-o-transform: translatey(0px);
 	}
 }

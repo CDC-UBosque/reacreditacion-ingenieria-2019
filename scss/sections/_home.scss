@@ -122,7 +122,8 @@
 		position: absolute;
 		bottom: 5%;
 		place-self: center;
-		animation: mouse 1s ease-in-out infinite;
+		//animation: mouse 1s ease-in-out infinite;
+		@include prefix(animation, mouse 1s ease-in-out infinite, webkit moz o);
 		
 		@media (max-width: $breakpoint_3){
 			bottom: -15%;
@@ -150,7 +151,49 @@
 	60% {
 		transform: translatey(-5px);
 	}
-	//100% {
-	//	transform: translatey(-5px);
-	//}
+}
+
+@-o-keyframes mouse {
+	0% {
+		-o-transform: translatey(0px);
+	}
+	40% {
+		-o-transform: translatey(-5px);
+	}
+	50% {
+		-o-transform: translatey(-4px);
+	}
+	60% {
+		-o-transform: translatey(-5px);
+	}
+}
+
+@-webkit-keyframes mouse {
+	0% {
+		-webkit-transform: translatey(0px);
+	}
+	40% {
+		-webkit-transform: translatey(-5px);
+	}
+	50% {
+		-webkit-transform: translatey(-4px);
+	}
+	60% {
+		-webkit-transform: translatey(-5px);
+	}
+}
+
+@-moz-keyframes mouse {
+	0% {
+		-moz-transform: translatey(0px);
+	}
+	40% {
+		-moz-transform: translatey(-5px);
+	}
+	50% {
+		-moz-transform: translatey(-4px);
+	}
+	60% {
+		-moz-transform: translatey(-5px);
+	}
 }
