@@ -1,7 +1,7 @@
 /* ---------------------------------- Neuron -----------------------------
 	------------------------------------------------------------------------------- */
 
-#neurona-left{
+#neurona-left .swiper-lazy-preloader{
 	@include display-grid;
 	@include grid-parent-2-columns (1fr, 1fr);
 	
@@ -164,7 +164,7 @@
 	
 }
 
-#neurona-right{
+#neurona-right .swiper-lazy-preloader{
 	@include display-grid;
 	@include grid-parent-2-columns (1fr, 1fr);
 	

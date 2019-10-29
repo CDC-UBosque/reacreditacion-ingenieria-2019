@@ -89,6 +89,8 @@ mixin swiper-container
 		
 		div.swiper-pagination
 		
+		div.swiper-scrollbar
+		
 
 
 //- ----------------------------
@@ -105,36 +107,39 @@ mixin set(key)
 // mixin neuronas left
 mixin swiper-info-left(numneurona, classneurona)
 	div.swiper-slide(id=numneurona class=classneurona)
-		div.image-neurona
-			block
-			- blocks.contentsvg()
-		
-		div.content-neurona
-			div.close-button: img(src='images/svg/close.svg')
-			div
+		div.swiper-lazy-preloader
+			div.image-neurona
 				block
-				- blocks.contentinfo()	
+				- blocks.contentsvg()
+			
+			div.content-neurona
+				div.close-button: img(src='images/svg/close.svg')
+				div
+					block
+					- blocks.contentinfo()	
 				
 				
 // mixin neuronas left
 mixin swiper-info-right(numneurona, classneurona)
 	div.swiper-slide(id=numneurona class=classneurona)
+	
+		div.swiper-lazy-preloader
 		
-		div.content-neurona
-			div.close-button: img(src='images/svg/close.svg')
-			div
+			div.content-neurona
+				div.close-button: img(src='images/svg/close.svg')
+				div
+					block
+					- blocks.contentinfo()	
+					
+			div.image-neurona
 				block
-				- blocks.contentinfo()	
-				
-		div.image-neurona
-			block
-			- blocks.contentsvg()
+				- blocks.contentsvg()
 
 
 // mixin neuronas individuales
 mixin swiper-home(numneurona)
 	div.swiper-slide(id=numneurona)
-		div.home
+		div.home.swiper-lazy-preloader
 			block
 			- blocks.content()
 				

@@ -1,9 +1,9 @@
 //- Bootstrap js
-script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js", integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", crossorigin="anonymous")
+//- script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js", integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", crossorigin="anonymous")
 
 script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
-script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+//- script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+//- script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
 
 
 	
@@ -13,14 +13,28 @@ script(src="js/snap.svg-min.js")
 
 <script type="module">import anime from '../js/index.js';var pathEls = document.querySelectorAll('path');for (var i = 0; i < pathEls.length; i++) {var pathEl = pathEls[i];var offset = anime.setDashoffset(pathEl);pathEl.setAttribute('stroke-dashoffset', offset);anime({targets: pathEl,strokeDashoffset: [offset, 0],duration: anime.random(1000, 50000),delay: anime.random(0, 2000),loop: true,direction: 'alternate',easing: 'easeInOutSine',autoplay: true});}</script>	
 
+
+
 //- Show stats FPS at top left corner
-//- script(src="js/stats.min.js")
+script(src="js/stats.min.js")
 
 
 //- Mouse wheel control scrollspy
-script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.0/js/swiper.min.js")
+//- script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.0/js/swiper.min.js")
+script(src="js/swiper.min.js")
 
 //- scrollspy
+//- script.
+	var swiper = new Swiper('.swiper-container', {
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '">' + (index + 1) + '</span>';
+			},
+		},
+	});
+	
 script.
 	var swiper = new Swiper(".swiper-container", {
 		pagination: ".swiper-pagination",
@@ -30,7 +44,9 @@ script.
 		spaceBetween: 0,
 		mousewheelControl: true,
 		parallax: true,
-		speed: 500
+		speed: 500,
+		lazy: true,
+		preloadImages: false
 	});
 	
 script(src="js/custom.js")
