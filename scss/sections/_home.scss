@@ -65,9 +65,9 @@
 		}
 		
 		img{
-			//min-width: 450px;
 			z-index: 10;
 			margin-bottom: 1rem;
+			position: relative;
 			@include grid-child-column (1, 13);
 			@include grid-child-row (1, 2); 
 			
@@ -82,6 +82,7 @@
 			display: none;
 			max-width: 5rem;
 			justify-self: center;
+			position: relative;
 			
 			@media (max-width: $breakpoint_4){
 				display: block;
@@ -91,6 +92,7 @@
 		
 		h1{
 			z-index: 10;
+			position: relative;
 			@include grid-child-column (1, 13);
 			@include grid-child-row (2, 3); 
 		}
@@ -99,6 +101,7 @@
 			z-index: 10;
 			place-self: right;
 			text-align: right;
+			position: relative;
 			@include grid-child-column (7, 13);
 			@include grid-child-row (3, 4); 
 			
@@ -112,6 +115,7 @@
 			z-index: 10;
 			place-self: right;
 			text-align: right;
+			position: relative;
 			@include grid-child-column (7, 13);
 			@include grid-child-row (4, 5); 
 			
@@ -125,6 +129,7 @@
 			z-index: 10;
 			place-self: right;
 			text-align: right;
+			position: relative;
 			@include grid-child-column (7, 13);
 			@include grid-child-row (5, 6); 
 			
@@ -141,6 +146,7 @@
 		position: absolute;
 		bottom: 5%;
 		place-self: center;
+		justify-self:center; 
 		//animation: mouse 1s ease-in-out infinite;
 		@include prefix(animation, mouse 1s ease-in-out infinite, webkit moz o);
 		
