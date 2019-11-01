@@ -47,11 +47,24 @@
 		}
 		
 		.anim{
+			position: relative;
 			@include prefix(animation, float 8s ease-in-out infinite, webkit moz o);
 			@include max-width-neuronas;
 			
 			@media (max-width: $breakpoint_3){
 				@include max-width-neuronas-mobile;
+			}
+			
+			&:before{
+				content: '';
+				position: absolute;
+				background: url(../images/svg/more-info.svg);
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 80px;
+				height: 3rem;
+				left: 5%;
+				top: 6%;
 			}
 		
 		}
@@ -211,6 +224,18 @@
 			
 			@media (max-width: $breakpoint_3){
 				@include max-width-neuronas-mobile;
+			}
+			
+			&:before{
+				content: '';
+				position: absolute;
+				background: url(../images/svg/more-info.svg);
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 80px;
+				height: 3rem;
+				right: 5%;
+				top: 6%;
 			}
 			
 		}
