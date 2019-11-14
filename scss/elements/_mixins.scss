@@ -254,13 +254,13 @@ $font_family_group: $family) {
 // ------------------------ max widths --------------------------- //
 // --------------------------------------------------- //
 @mixin max-width-neuronas{
-	max-width: 30rem;
+	max-width: 25rem;
 	height: calc(80vh - 0px);
 	margin: auto;
 }
 
 @mixin max-width-neuronas-mobile{
-	max-width: 15rem;
+	max-width: 10rem;
 	//height: calc(80vh - 0px);
 	height: initial;
 	margin: auto;

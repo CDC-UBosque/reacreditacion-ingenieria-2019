@@ -46,7 +46,7 @@
 		
 		.anim{
 			position: relative;
-			@include prefix(animation, float 8s ease-in-out infinite, webkit moz o);
+			@include prefix(animation, float 15s ease-in-out infinite, webkit moz o);
 			@include max-width-neuronas;
 			
 			@media (max-width: $breakpoint_3){
@@ -166,6 +166,7 @@
 		
 		a{
 			display: block;
+			font-size: 18px;
 		}
 		
 	}
@@ -219,7 +220,7 @@
 		}
 		
 		.anim{
-			@include prefix(animation, float 8s ease-in-out infinite, webkit moz o);
+			@include prefix(animation, float 15s ease-in-out infinite, webkit moz o);
 			@include max-width-neuronas;
 			
 			@media (max-width: $breakpoint_3){
@@ -350,13 +351,22 @@
 		a{
 			text-align: right;
 			display: block;
+			font-size: 18px;
+		}
+		
+		.acordiones{
+			text-align: left;
+			
+			a{
+				text-align: left;
+			}
+			
 		}
 		
 	}
 	
 	.content-neurona.open{
 		display: block;
-	   
 	}
 	
 }
