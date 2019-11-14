@@ -105,7 +105,7 @@
 			right: -50px;
 			top: calc(50vh - 0px);
 			font-size: 13px;
-			@include prefix(rotate, -90deg, webkit moz o);
+			@include prefix(transform, rotate(-90deg), webkit moz o);
 			////@include grid-child-column (7, 13);
 			////@include grid-child-row (3, 4); 
 			
