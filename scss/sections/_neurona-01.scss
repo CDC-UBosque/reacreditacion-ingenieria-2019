@@ -120,8 +120,7 @@
 			z-index: 100000;
 			align-self: center;
 			justify-self: center;
-			margin: 0 auto;
-			width: 90%;
+			margin: 0 1rem;
 			background: transparentize($color_black, 0.1);
 			@include grid-child-row (1, 2);
 		}
@@ -167,6 +166,9 @@
 		a{
 			display: block;
 			font-size: 18px;
+			@media (max-width: $breakpoint_4){
+				font-size: 15px;
+			}
 		}
 		
 	}
@@ -296,8 +298,7 @@
 			z-index: 100000;
 			align-self: center;
 			justify-self: center;
-			margin: 0 auto;
-			width: 90%;
+			margin: 0 1rem;
 			background: transparentize($color_black, 0.1);
 			@include grid-child-row (1, 2);
 		}
@@ -352,6 +353,10 @@
 			text-align: right;
 			display: block;
 			font-size: 18px;
+			
+			@media (max-width: $breakpoint_4){
+				font-size: 15px;
+			}
 		}
 		
 		.acordiones{

@@ -1,7 +1,8 @@
 html{
-	@media (pointer:coarse){
-		overflow-x: hidden;
-	}
+	//@media (pointer:coarse){
+	//	overflow-x: hidden;
+	//}
+	-webkit-overflow-scrolling:touch;
 	
 	body{
 		color: $color_brand_white;
