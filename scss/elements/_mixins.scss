@@ -279,6 +279,7 @@ $font_family_group: $family) {
 @mixin max-width-content-neuronas{
 	max-width: 500px;
 	margin: auto;
+	max-height: calc(80vh - 0px);
 }
 
 // ------------------------ number navigation mixin --------------------------- //

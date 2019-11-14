@@ -10,7 +10,7 @@
 		@include grid-parent-2-rows (1fr, 1fr);
 	}
 	
-	@media (max-width: $breakpoint_4){
+	@media (max-width: $breakpoint_3){
 		@include grid-parent-1-rows (1fr);
 	}
 	
@@ -26,13 +26,11 @@
 		@include grid-child-row (1, 2);
 		
 		@media (max-width: $breakpoint_3){
-			@include prefix(transform, translatex(0rem), webkit moz o);
-			@include max-width-neuronas-mobile;
-		}
-		
-		@media (max-width: $breakpoint_4){
 			height: calc(70vh - 0px);
 			justify-self: center;
+			left: 0;
+			@include prefix(transform, translatex(0rem) !important, webkit moz o);
+			@include max-width-neuronas-mobile;
 		}
 		
 		&:hover{
@@ -103,6 +101,7 @@
 	    border: 1px solid $color_brand_white;
 	    border-radius: 0.7rem;
 	    padding: 2rem;
+	    overflow-y: auto;
 		@include max-width-content-neuronas;
 		margin: 0 1rem 0 5rem;
 		@include grid-child-column (2, 3);
@@ -117,16 +116,17 @@
 			@include grid-child-row (2, 3);
 		}
 		
-		@media (max-width: $breakpoint_4){
+		@media (max-width: $breakpoint_3){
 			z-index: 100000;
 			align-self: center;
 			justify-self: center;
 			margin: 0 auto;
+			width: 90%;
 			background: transparentize($color_black, 0.1);
 			@include grid-child-row (1, 2);
 		}
 		
-		&:before{
+		/*&:before{
 			content: '';
 			position: absolute;
 			background: url(../images/svg/side-box.svg);
@@ -142,7 +142,7 @@
 			    @include prefix(transform, rotate(90deg), webkit moz o);
 			}
 			
-		}
+		}*/
 		
 		.close-button{
 			text-align: right;
@@ -181,7 +181,7 @@
 	@include display-grid;
 	@include grid-parent-2-columns (1fr, 1fr);
 	
-	@media (max-width: $breakpoint_4){
+	@media (max-width: $breakpoint_3){
 		@include grid-parent-1-columns (1fr);
 	}
 	
@@ -201,9 +201,9 @@
 			@include max-width-neuronas-mobile;
 		}
 		
-		@media (max-width: $breakpoint_4){
+		@media (max-width: $breakpoint_3){
 			height: calc(70vh - 0px);
-			justify-self: center;
+			justify-self: start;
 			@include grid-child-column (1, 2);
 		}
 		
@@ -275,6 +275,7 @@
 	    border: 1px solid $color_brand_white;
 	    border-radius: 0.7rem;
 	    padding: 2rem;
+	    overflow-y: auto;
 		@include max-width-content-neuronas;
 		margin: 0 5rem 0 1rem;
 		justify-self: end;
@@ -290,16 +291,17 @@
 			@include grid-child-row (2, 3);
 		}
 		
-		@media (max-width: $breakpoint_4){
+		@media (max-width: $breakpoint_3){
 			z-index: 100000;
 			align-self: center;
 			justify-self: center;
 			margin: 0 auto;
+			width: 90%;
 			background: transparentize($color_black, 0.1);
 			@include grid-child-row (1, 2);
 		}
 		
-		&:before{
+		/*&:before{
 			content: '';
 			position: absolute;
 			background: url(../images/svg/side-box-2.svg);
@@ -315,7 +317,7 @@
 				@include prefix(transform, rotate(-90deg), webkit moz o);
 			}
 			
-		}
+		}*/
 		
 		.close-button{
 			text-align: left;
@@ -325,7 +327,7 @@
 			@include prefix(transition-timing-function, ease-in-out, webkit moz o);
 			@include prefix(transition, 0.2s, webkit moz o);
 			
-			@media (max-width: $breakpoint_4){
+			@media (max-width: $breakpoint_3){
 				margin: -.2rem -.2rem 1rem;
 			}
 			
