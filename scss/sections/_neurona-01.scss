@@ -148,6 +148,8 @@
 			display: block;
 			margin: -1rem -1rem 1rem;
 			cursor: pointer;
+			position: sticky;
+			top: 0rem;
 			@include prefix(transition-timing-function, ease-in-out, webkit moz o);
 			@include prefix(transition, 0.2s, webkit moz o);
 			
@@ -326,6 +328,8 @@
 			display: block;
 			margin: -1rem -1rem 1rem;
 			cursor: pointer;
+			position: sticky;
+			top: 0rem;
 			@include prefix(transition-timing-function, ease-in-out, webkit moz o);
 			@include prefix(transition, 0.2s, webkit moz o);
 			

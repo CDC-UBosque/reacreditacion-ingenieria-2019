@@ -3462,6 +3462,8 @@ p {
       display: block;
       margin: -1rem -1rem 1rem;
       cursor: pointer;
+      position: sticky;
+      top: 0rem;
       -webkit-transition-timing-function: ease-in-out;
       -moz-transition-timing-function: ease-in-out;
       -o-transition-timing-function: ease-in-out;
@@ -3677,6 +3679,8 @@ p {
       display: block;
       margin: -1rem -1rem 1rem;
       cursor: pointer;
+      position: sticky;
+      top: 0rem;
       -webkit-transition-timing-function: ease-in-out;
       -moz-transition-timing-function: ease-in-out;
       -o-transition-timing-function: ease-in-out;
