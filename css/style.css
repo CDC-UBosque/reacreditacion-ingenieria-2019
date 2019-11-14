@@ -3322,7 +3322,17 @@ p {
     -ms-grid-column-span: 1;
     grid-row: 1/2;
     -ms-grid-row: 1;
-    -ms-grid-row-span: 1; }
+    -ms-grid-row-span: 1;
+    /*&:hover{
+			@include prefix(transition-timing-function, ease-in-out, webkit moz o);
+			@include prefix(transition, 0.2s, webkit moz o);
+			@include prefix(transform, translatex(2rem), webkit moz o);
+			
+			@media (max-width: $breakpoint_3){
+				@include prefix(transform, translatex(0rem), webkit moz o);
+			}
+			
+		}*/ }
     @media (max-width: 768px) {
       #neurona-left .swiper-lazy-preloader .image-neurona {
         height: calc(70vh - 0px);
@@ -3335,25 +3345,6 @@ p {
         max-width: 10rem;
         height: initial;
         margin: auto; } }
-    #neurona-left .swiper-lazy-preloader .image-neurona:hover {
-      -webkit-transition-timing-function: ease-in-out;
-      -moz-transition-timing-function: ease-in-out;
-      -o-transition-timing-function: ease-in-out;
-      transition-timing-function: ease-in-out;
-      -webkit-transition: 0.2s;
-      -moz-transition: 0.2s;
-      -o-transition: 0.2s;
-      transition: 0.2s;
-      -webkit-transform: translatex(2rem);
-      -moz-transform: translatex(2rem);
-      -o-transform: translatex(2rem);
-      transform: translatex(2rem); }
-      @media (max-width: 768px) {
-        #neurona-left .swiper-lazy-preloader .image-neurona:hover {
-          -webkit-transform: translatex(0rem);
-          -moz-transform: translatex(0rem);
-          -o-transform: translatex(0rem);
-          transform: translatex(0rem); } }
     #neurona-left .swiper-lazy-preloader .image-neurona .anim {
       position: relative;
       -webkit-animation: float 15s ease-in-out infinite;
@@ -3542,7 +3533,17 @@ p {
     -ms-grid-column-span: 1;
     grid-row: 1/2;
     -ms-grid-row: 1;
-    -ms-grid-row-span: 1; }
+    -ms-grid-row-span: 1;
+    /*&:hover{
+			@include prefix(transition-timing-function, ease-in-out, webkit moz o);
+			@include prefix(transition, 0.2s, webkit moz o);
+			@include prefix(transform, translatex(-2rem), webkit moz o);
+			
+			@media (max-width: $breakpoint_3){
+				@include prefix(transform, translatex(0rem), webkit moz o);
+			}
+			
+		}*/ }
     @media (max-width: 768px) {
       #neurona-right .swiper-lazy-preloader .image-neurona {
         -webkit-transform: translatex(0rem);
@@ -3559,25 +3560,6 @@ p {
         grid-column: 1/2;
         -ms-grid-column: 1;
         -ms-grid-column-span: 1; } }
-    #neurona-right .swiper-lazy-preloader .image-neurona:hover {
-      -webkit-transition-timing-function: ease-in-out;
-      -moz-transition-timing-function: ease-in-out;
-      -o-transition-timing-function: ease-in-out;
-      transition-timing-function: ease-in-out;
-      -webkit-transition: 0.2s;
-      -moz-transition: 0.2s;
-      -o-transition: 0.2s;
-      transition: 0.2s;
-      -webkit-transform: translatex(-2rem);
-      -moz-transform: translatex(-2rem);
-      -o-transform: translatex(-2rem);
-      transform: translatex(-2rem); }
-      @media (max-width: 768px) {
-        #neurona-right .swiper-lazy-preloader .image-neurona:hover {
-          -webkit-transform: translatex(0rem);
-          -moz-transform: translatex(0rem);
-          -o-transform: translatex(0rem);
-          transform: translatex(0rem); } }
     #neurona-right .swiper-lazy-preloader .image-neurona .anim {
       -webkit-animation: float 15s ease-in-out infinite;
       -moz-animation: float 15s ease-in-out infinite;

@@ -33,7 +33,7 @@
 			@include max-width-neuronas-mobile;
 		}
 		
-		&:hover{
+		/*&:hover{
 			@include prefix(transition-timing-function, ease-in-out, webkit moz o);
 			@include prefix(transition, 0.2s, webkit moz o);
 			@include prefix(transform, translatex(2rem), webkit moz o);
@@ -42,7 +42,7 @@
 				@include prefix(transform, translatex(0rem), webkit moz o);
 			}
 			
-		}
+		}*/
 		
 		.anim{
 			position: relative;
@@ -210,7 +210,7 @@
 			@include grid-child-column (1, 2);
 		}
 		
-		&:hover{
+		/*&:hover{
 			@include prefix(transition-timing-function, ease-in-out, webkit moz o);
 			@include prefix(transition, 0.2s, webkit moz o);
 			@include prefix(transform, translatex(-2rem), webkit moz o);
@@ -219,7 +219,7 @@
 				@include prefix(transform, translatex(0rem), webkit moz o);
 			}
 			
-		}
+		}*/
 		
 		.anim{
 			@include prefix(animation, float 15s ease-in-out infinite, webkit moz o);
