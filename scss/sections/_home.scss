@@ -63,15 +63,34 @@
 		
 		@media (max-width: $breakpoint_3){
 			margin-top: 0rem;
+			align-self: center;
 			@include grid-child-column (2, 12);
-			@include grid-child-row (2, 4); 
+			@include grid-child-row (1, 4); 
 		}
 		
 		@media (max-width: $breakpoint_4){
 			@include grid-child-row (1, 4); 
 		}
 		
-		img{
+		a{
+			z-index: 10;
+			margin-bottom: 1rem;
+			position: relative;
+			display: block;
+			@include grid-child-column (1, 13);
+			@include grid-child-row (1, 2); 
+			
+			@media (max-width: $breakpoint_3){
+				@include grid-child-row (2, 4); 
+			}
+			
+			@media (max-width: $breakpoint_4){
+				display: none;
+			}
+			
+		}
+		
+		/*img{
 			z-index: 10;
 			margin-bottom: 1rem;
 			position: relative;
@@ -82,9 +101,10 @@
 				display: none;
 			}
 			
-		}
+		}*/
 		
-		img.mobile{
+		
+		a.mobile{
 			z-index: 10;
 			display: none;
 			max-width: 5rem;
@@ -102,12 +122,15 @@
 			position: relative;
 			@include grid-child-column (1, 13);
 			@include grid-child-row (2, 3); 
+			
+			@media (max-width: $breakpoint_3){
+				@include grid-child-row (4, 6); 
+			}
+			
 		}
 		
 		h4{
 			z-index: 10;
-			place-self: right;
-			text-align: right;
 			position: fixed;
 			right: -50px;
 			top: calc(50vh - 0px);
@@ -134,6 +157,13 @@
 				@include grid-child-column (1, 13);
 			}
 			
+			@media (max-width: $breakpoint_3){
+				border-bottom: 0px;
+				border-left: 0px;
+				border-right: 0px;
+				@include grid-child-row (6, 7); 
+			}
+			
 		}
 		
 		p{
@@ -146,6 +176,10 @@
 			
 			@media (max-width: $breakpoint_2){
 				@include grid-child-column (1, 13);
+			}
+			
+			@media (max-width: $breakpoint_3){
+				@include grid-child-row (7, 10); 
 			}
 			
 		}
@@ -162,12 +196,12 @@
 		//@include prefix(animation, mouse 1s ease-in-out infinite, webkit moz o);
 		
 		@media (max-width: $breakpoint_3){
-			bottom: -15%;
+			bottom: 15%;
 			max-width: 1.5rem;
 		}
 		
 		@media (max-width: $breakpoint_4){
-			bottom: -10%;
+			bottom: 10%;
 		}
 		
 	}
