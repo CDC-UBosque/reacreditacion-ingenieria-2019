@@ -42,6 +42,21 @@ script.
 		lazy: true,
 		preloadImages: false,
 		clickable: false,
+		
+		// Responsive breakpoints
+	    breakpoints: {
+	        // when window width is <= 768px
+	        768: {
+	            scrollbar: {
+					el: '.swiper-scrollbar',
+				    draggable: true,
+				},
+				pagination: {
+				    el: '.swiper-pagination',
+				    type: 'bullets',
+				  },
+	        }
+	    }
 	});
 	
 script.
