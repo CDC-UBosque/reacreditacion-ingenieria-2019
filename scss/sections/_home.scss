@@ -195,13 +195,13 @@
 		//animation: mouse 1s ease-in-out infinite;
 		//@include prefix(animation, mouse 1s ease-in-out infinite, webkit moz o);
 		
-		@media (max-width: $breakpoint_3){
-			bottom: 15%;
-			max-width: 1.5rem;
-		}
+		//@media (max-width: $breakpoint_3){
+		//	bottom: 15%;
+		//	max-width: 1.5rem;
+		//}
 		
-		@media (max-width: $breakpoint_4){
-			bottom: 10%;
+		@media (max-width: $breakpoint_3){
+			display: none;
 		}
 		
 	}

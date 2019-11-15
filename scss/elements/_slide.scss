@@ -33,6 +33,8 @@ body {
 		-ms-flex-align: center;
 		-webkit-align-items: center;
 		align-items: center;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
     }
     
     .swiper-pagination{

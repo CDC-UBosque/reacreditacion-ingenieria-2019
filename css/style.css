@@ -2702,7 +2702,9 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: center; }
+    align-items: center;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
   body .swiper-pagination {
     position: fixed;
     bottom: 0;
@@ -2907,8 +2909,12 @@ h2 {
   letter-spacing: 0; }
   @media (max-width: 991px) {
     h2 {
-      font-size: 34px;
-      line-height: 35px; } }
+      font-size: 34px !important;
+      line-height: 35px !important; } }
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 20px !important;
+      line-height: 24px !important; } }
 
 h3 {
   word-break: break-word;
@@ -3230,11 +3236,7 @@ p {
     justify-self: center; }
     @media (max-width: 768px) {
       .home .mouse {
-        bottom: 15%;
-        max-width: 1.5rem; } }
-    @media (max-width: 500px) {
-      .home .mouse {
-        bottom: 10%; } }
+        display: none; } }
 
 @keyframes mouse {
   0% {
